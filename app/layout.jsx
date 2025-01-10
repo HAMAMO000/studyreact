@@ -18,12 +18,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="ja">
+      <head>
+
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <h1>ルート</h1>
+        <h1>ようこそ。。</h1>
         {children}
+        <footer className="">
+          <p>ここフッター</p>
+        </footer>
       </body>
     </html>
   );

@@ -8,19 +8,23 @@ export default function Home() {
         <title>うんこちゃん</title>
 
       </Head>
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <div className="flex">
+      <main className="main-container gap-8 row-start-2 items-center sm:items-start">
+        <h1>こんにちは！</h1>
 
-
-          <h1>ここがhogeページ</h1>
-        </div>
-        <a href="./"><h1>ホームに戻る</h1></a>
+        <Image
+          className="takeru"
+          src="/tkr.jpg"
+          alt="Next.js logo"
+          width={180}
+          height={38}
+          priority
+        />
+        <hr />
+        <a href="./"><button>ホームに戻る</button></a>
 
 
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <p>ここフッター</p>
-      </footer>
+
     </div>
   );
 }

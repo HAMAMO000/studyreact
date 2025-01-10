@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #ff0000;
   --foreground: #171717;
 }
 
@@ -17,13 +17,50 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
   font-size: 45px;
 }
 
+button {
+  border: 1px solid rgb(33, 40, 255);
+  padding: 20px;
+  border-radius: 8px;
+  font-size: large;
+  font-weight: bold;
+  transition: 0.5s;
+  margin: 10px;
+}
+
+button:hover {
+  border: 2px solid rgb(33, 40, 255);
+  background-color: #464646;
+
+}
+
+
+
 .flex {
   display: flex;
+}
+
+.main-container {
+  text-align: center;
+  margin: auto;
+  justify-items: center;
+}
+
+
+.takeru {
+  transition: 0.5s;
+  border-radius: 8px;
+
+
+}
+
+.takeru:hover {
+  filter: invert(1);
+  /* 色を反転させる */
 }
